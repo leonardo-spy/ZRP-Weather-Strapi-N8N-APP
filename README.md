@@ -111,15 +111,15 @@ O projeto inclui um arquivo `docker-compose.yml` que configura os serviços nece
 - **n8n**: Automação para integrar o Strapi com a API do Weatherstack e enviar notificações.
 
 ## Fluxo n8n
-![fluxo-n8n](https://github.com/user-attachments/assets/84ac1222-d173-48a8-b4a8-62021c99ffe7)
+![fluxo-n8n](https://github.com/user-attachments/assets/f4615ee4-db25-49da-be48-d2f479b084a6)
 
 ## Exemplo de E-mail Enviado Após Criação do Pedido
 
 Na finalização de execução do fluxo, o n8n envia automaticamente um e-mail com os informações do tempo.
 
 Segue um exemplo do conteúdo do e-mail recebido com a API Free:<br/>
-![email-gratuito](https://github.com/user-attachments/assets/72dc4480-da9c-4539-af20-8defd1ad6aa2)
+![email-gratuito](https://github.com/user-attachments/assets/a0e60bf8-9188-416c-84f6-9da097bbf280)
 
 E um exemplo com a API Premium:<br/>
-![email-premium](https://github.com/user-attachments/assets/66577934-1f3b-4fde-bfe3-aec931c6b92f)
+![email-premium](https://github.com/user-attachments/assets/c8cd90cf-6fae-48f6-9c54-55d04862054d)
 >OBS: Esse email foi criado para teste dessa aplicação, após a análise, ele será desativado
