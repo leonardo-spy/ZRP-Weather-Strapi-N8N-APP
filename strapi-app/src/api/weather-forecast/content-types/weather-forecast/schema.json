@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weather_forecasts",
+  "info": {
+    "singularName": "weather-forecast",
+    "pluralName": "weather-forecasts",
+    "displayName": "WeatherForecast"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "forecast_temperature": {
+      "type": "decimal"
+    },
+    "min_temperature": {
+      "type": "decimal"
+    },
+    "max_temperature": {
+      "type": "decimal"
+    },
+    "is_good_for_beach": {
+      "type": "boolean"
+    },
+    "forecast_time": {
+      "type": "date"
+    },
+    "foreseen_date": {
+      "type": "datetime"
+    }
+  }
+}

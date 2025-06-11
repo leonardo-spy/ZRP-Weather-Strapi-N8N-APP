@@ -1,0 +1,1119 @@
+{
+  "name": "ZRP",
+  "nodes": [
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ebb36960-c857-4a4e-8ced-bfbc5013d6c6",
+              "name": "city",
+              "value": "={{ $json.location.name }}",
+              "type": "string"
+            },
+            {
+              "id": "73367594-c7b7-45c1-a05e-a8eb6efce8ff",
+              "name": "current_temperature",
+              "value": "={{ $json.current.temperature }}",
+              "type": "number"
+            },
+            {
+              "id": "845dd006-4f77-4c48-b6a5-c28dcdbe6b96",
+              "name": "weather",
+              "value": "={{ $json.current.weather_descriptions[0] }}",
+              "type": "string"
+            },
+            {
+              "id": "089b6f72-80f9-42c8-9a40-d1dc08631716",
+              "name": "min_temperature",
+              "value": "={{ Object.values($json.forecast)[0].mintemp}}",
+              "type": "number"
+            },
+            {
+              "id": "27175e70-0aea-4831-abcc-fd2c56b171cf",
+              "name": "max_temperature",
+              "value": "={{ Object.values($json.forecast)[0].maxtemp}}",
+              "type": "number"
+            },
+            {
+              "id": "d0b46180-70bf-441f-ab0d-3c7d79802107",
+              "name": "weather_icon",
+              "value": "={{ $json.current.weather_icons[0] }}",
+              "type": "string"
+            },
+            {
+              "id": "1b08a322-5372-4884-9ce3-bde6c799d0ef",
+              "name": "feels_like",
+              "value": "={{ $json.current.feelslike }}",
+              "type": "number"
+            },
+            {
+              "id": "c2f50bdd-a852-403c-bc69-a6e9e4903273",
+              "name": "humidity",
+              "value": "={{ $json.current.humidity }}",
+              "type": "number"
+            },
+            {
+              "id": "6e61289f-ac67-4dfc-b8e5-ceecd1858d5c",
+              "name": "wind_speed",
+              "value": "={{ $json.current.wind_speed }}",
+              "type": "number"
+            },
+            {
+              "id": "86d9be11-e805-49c0-b881-27b92b5a1462",
+              "name": "precipitation",
+              "value": "={{ $json.current.precip }}",
+              "type": "number"
+            },
+            {
+              "id": "5539d4c3-b63d-413e-a44e-fe90f02a5310",
+              "name": "timestamp",
+              "value": "={{ $json.location.localtime }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        440,
+        -100
+      ],
+      "id": "72e4baa4-48d5-433e-8f08-092317fb2c70",
+      "name": "Normaliza Dados SP"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ebb36960-c857-4a4e-8ced-bfbc5013d6c6",
+              "name": "city",
+              "value": "={{ $json.location.name }}",
+              "type": "string"
+            },
+            {
+              "id": "73367594-c7b7-45c1-a05e-a8eb6efce8ff",
+              "name": "current_temperature",
+              "value": "={{ $json.current.temperature }}",
+              "type": "number"
+            },
+            {
+              "id": "0e99e658-3488-47a6-8f62-00540666f1e3",
+              "name": "weather",
+              "value": "={{ $json.current.weather_descriptions[0] }}",
+              "type": "string"
+            },
+            {
+              "id": "089b6f72-80f9-42c8-9a40-d1dc08631716",
+              "name": "min_temperature",
+              "value": "={{ Object.values($json.forecast)[0].mintemp}}",
+              "type": "number"
+            },
+            {
+              "id": "27175e70-0aea-4831-abcc-fd2c56b171cf",
+              "name": "max_temperature",
+              "value": "={{ Object.values($json.forecast)[0].maxtemp}}",
+              "type": "number"
+            },
+            {
+              "id": "d0b46180-70bf-441f-ab0d-3c7d79802107",
+              "name": "weather_icon",
+              "value": "={{ $json.current.weather_icons[0] }}",
+              "type": "string"
+            },
+            {
+              "id": "1b08a322-5372-4884-9ce3-bde6c799d0ef",
+              "name": "feels_like",
+              "value": "={{ $json.current.feelslike }}",
+              "type": "number"
+            },
+            {
+              "id": "c2f50bdd-a852-403c-bc69-a6e9e4903273",
+              "name": "humidity",
+              "value": "={{ $json.current.humidity }}",
+              "type": "number"
+            },
+            {
+              "id": "6e61289f-ac67-4dfc-b8e5-ceecd1858d5c",
+              "name": "wind_speed",
+              "value": "={{ $json.current.wind_speed }}",
+              "type": "number"
+            },
+            {
+              "id": "86d9be11-e805-49c0-b881-27b92b5a1462",
+              "name": "precipitation",
+              "value": "={{ $json.current.precip }}",
+              "type": "number"
+            },
+            {
+              "id": "98c9fd84-ea6f-494a-8b72-978632ed2eab",
+              "name": "timestamp",
+              "value": "={{ $json.location.localtime }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        440,
+        100
+      ],
+      "id": "0aa30d1e-0399-404a-bf7f-a2fb96bc64d6",
+      "name": "Normaliza Dados RJ"
+    },
+    {
+      "parameters": {
+        "url": "https://api.weatherstack.com/forecast?query=Rio de Janeiro,BR",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        100
+      ],
+      "id": "116fc78d-4fe9-41d9-b63f-c85a45465de4",
+      "name": "Consulta Tempo Rio de Janeiro",
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "L5Tl75POvXOPzwd7",
+          "name": "Query Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.weatherstack.com/forecast?query=Sao Paulo,BR",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        -100
+      ],
+      "id": "34ee6bcf-a551-4476-9454-1ebb1129efa3",
+      "name": "Consulta Tempo Sao Paulo",
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "L5Tl75POvXOPzwd7",
+          "name": "Query Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env['URL_STRAPI'] }}/api/weather-forecasts",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"data\":{{ JSON.stringify($json) }}\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1320,
+        600
+      ],
+      "id": "219d20f8-1b51-4195-b156-2452ee89b11f",
+      "name": "Gravar Strapi Previsoes  RJ",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "2B26JrdQQIccpL2u",
+          "name": "Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.all();\nfor (const item of data) {\n  delete item.json.next_days;\n}\nreturn data;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        700,
+        440
+      ],
+      "id": "58a3a8db-5b9b-4bed-973f-5c9ae5495c5b",
+      "name": "Padronizacao RJ"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "62d0c40a-1d9a-4497-975e-4726e8c69dc6",
+              "name": "city",
+              "value": "={{ $json.normalized_data.city }}",
+              "type": "string"
+            },
+            {
+              "id": "683a6f41-8655-411e-b063-a81d225dac21",
+              "name": "forecast_temperature",
+              "value": "={{ $json.weekend_forecast.avgtemp }}",
+              "type": "number"
+            },
+            {
+              "id": "c063cc57-f875-4a01-9013-88b0c342c054",
+              "name": "min_temperature",
+              "value": "={{ $json.weekend_forecast.mintemp }}",
+              "type": "number"
+            },
+            {
+              "id": "f9aef0fe-df86-4a2c-ab4e-4b39f13b2c4c",
+              "name": "max_temperature",
+              "value": "={{ $json.weekend_forecast.maxtemp }}",
+              "type": "number"
+            },
+            {
+              "id": "f7050f52-f004-4644-b45d-d98d09ad1e1e",
+              "name": "is_good_for_beach",
+              "value": "={{ $json.weekend_forecast.goodForBeach }}",
+              "type": "boolean"
+            },
+            {
+              "id": "5cc8d5c6-dc80-4d76-8633-45f0552abab6",
+              "name": "forecast_time",
+              "value": "={{ $json.weekend_forecast.date }}",
+              "type": "string"
+            },
+            {
+              "id": "d175112e-8137-41d5-aac2-2a60c285c6ce",
+              "name": "foreseen_date",
+              "value": "={{ $json.normalized_data.timestamp }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1120,
+        600
+      ],
+      "id": "8c7af0e0-71f7-487e-b359-ff6646552632",
+      "name": "Normaliza Dados Previsao RJ"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "weekend_forecast",
+        "include": "selectedOtherFields",
+        "fieldsToInclude": "normalized_data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        920,
+        600
+      ],
+      "id": "ce6527fd-e560-440a-9f6f-7952b41c7f8b",
+      "name": "Aparta Fim de Semana"
+    },
+    {
+      "parameters": {
+        "jsCode": "function isSaturday(date) {\n  const dayOfWeek = new Date(date).getDay();\n  return dayOfWeek === 6;\n}\n\nfunction getSaturdayAndNextDayForecast(forecastData) {\n  const saturdayForecast = forecastData.find(item => isSaturday(item.date));\n  const saturdayIndex = forecastData.indexOf(saturdayForecast);\n  const sundayForecast = forecastData[saturdayIndex + 1];\n\n  return { saturdayForecast, sundayForecast };\n}\n\nfunction isGoodForBeach(forecast) {\n  const temperature = forecast.temp_max;\n  \n  if (temperature > 25) {\n    return true;\n  }\n  return false;\n}\n\nconst normalized_data = $input.first().json;\nconst { saturdayForecast, sundayForecast } = getSaturdayAndNextDayForecast(normalized_data.next_days);\n\nconst weekend_forecast = [\n  {\n    ...saturdayForecast,\n    day: \"Saturday\",\n    goodForBeach: isGoodForBeach(saturdayForecast)\n  },\n  {\n    ...sundayForecast,\n    day: \"Sunday\",\n    goodForBeach: isGoodForBeach(sundayForecast) \n  }\n];\n\n\nreturn { 'normalized_data': normalized_data, 'weekend_forecast': weekend_forecast };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        700,
+        600
+      ],
+      "id": "fb5aa8f2-6ba2-44d1-8304-795c24568f17",
+      "name": "Calcula Final de Semana"
+    },
+    {
+      "parameters": {
+        "mode": "chooseBranch",
+        "numberInputs": 3,
+        "output": "empty"
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1500,
+        440
+      ],
+      "id": "c63ba5b3-9ba2-4edf-aa29-b62864ac00ba",
+      "name": "Aguarda Consulta Tempo e Previsoes"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env['URL_STRAPI'] }}/api/weathers",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"data\":{{ JSON.stringify($json) }}\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        920,
+        320
+      ],
+      "id": "8696f22d-a393-431d-9a73-3798db018a12",
+      "name": "Gravar Strapi SP",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "2B26JrdQQIccpL2u",
+          "name": "Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env['URL_STRAPI'] }}/api/weathers",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"data\":{{ JSON.stringify($json) }}\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        920,
+        440
+      ],
+      "id": "6c45fde3-42b4-4402-ae00-b5627d5c5b16",
+      "name": "Gravar Strapi RJ",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "2B26JrdQQIccpL2u",
+          "name": "Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.weatherstack.com/forecast?query=Sao Paulo,BR&forecast_days=2&language=pt",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        320
+      ],
+      "id": "40124f67-a063-4eb8-b0b8-71be33b81988",
+      "name": "Consulta Completa Tempo Sao Paulo",
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "L5Tl75POvXOPzwd7",
+          "name": "Query Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ebb36960-c857-4a4e-8ced-bfbc5013d6c6",
+              "name": "city",
+              "value": "={{ $json.location.name }}",
+              "type": "string"
+            },
+            {
+              "id": "73367594-c7b7-45c1-a05e-a8eb6efce8ff",
+              "name": "current_temperature",
+              "value": "={{ $json.current.temperature }}",
+              "type": "number"
+            },
+            {
+              "id": "f4eff008-966e-4add-af4c-ec4e80df4e88",
+              "name": "weather",
+              "value": "={{ $json.current.weather_descriptions[0] }}",
+              "type": "string"
+            },
+            {
+              "id": "089b6f72-80f9-42c8-9a40-d1dc08631716",
+              "name": "min_temperature",
+              "value": "={{ Object.values($json.forecast)[1].mintemp ?? null}}",
+              "type": "number"
+            },
+            {
+              "id": "27175e70-0aea-4831-abcc-fd2c56b171cf",
+              "name": "max_temperature",
+              "value": "={{ Object.values($json.forecast)[1].maxtemp ?? null}}",
+              "type": "number"
+            },
+            {
+              "id": "d0b46180-70bf-441f-ab0d-3c7d79802107",
+              "name": "weather_icon",
+              "value": "={{ $json.current.weather_icons[0] }}",
+              "type": "string"
+            },
+            {
+              "id": "1b08a322-5372-4884-9ce3-bde6c799d0ef",
+              "name": "feels_like",
+              "value": "={{ $json.current.feelslike }}",
+              "type": "number"
+            },
+            {
+              "id": "c2f50bdd-a852-403c-bc69-a6e9e4903273",
+              "name": "humidity",
+              "value": "={{ $json.current.humidity }}",
+              "type": "number"
+            },
+            {
+              "id": "6e61289f-ac67-4dfc-b8e5-ceecd1858d5c",
+              "name": "wind_speed",
+              "value": "={{ $json.current.wind_speed }}",
+              "type": "number"
+            },
+            {
+              "id": "86d9be11-e805-49c0-b881-27b92b5a1462",
+              "name": "precipitation",
+              "value": "={{ $json.current.precip }}",
+              "type": "number"
+            },
+            {
+              "id": "9ff14a99-7c0e-49a1-a7f8-9db3fa778332",
+              "name": "timestamp",
+              "value": "={{ $json.location.localtime }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        440,
+        320
+      ],
+      "id": "e371d4fd-fe23-4d82-bf1a-88bf67e8c7e3",
+      "name": "Normaliza Dados Completo SP"
+    },
+    {
+      "parameters": {
+        "url": "https://api.weatherstack.com/forecast?query=Rio de Janeiro,BR&forecast_days=10&language=pt",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        520
+      ],
+      "id": "53c2e9b5-32ef-45fd-9a95-1499855bcf24",
+      "name": "Consulta Completa Tempo Rio de Janeiro",
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "L5Tl75POvXOPzwd7",
+          "name": "Query Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ebb36960-c857-4a4e-8ced-bfbc5013d6c6",
+              "name": "city",
+              "value": "={{ $json.location.name }}",
+              "type": "string"
+            },
+            {
+              "id": "73367594-c7b7-45c1-a05e-a8eb6efce8ff",
+              "name": "current_temperature",
+              "value": "={{ $json.current.temperature }}",
+              "type": "number"
+            },
+            {
+              "id": "06543b37-553d-4189-be9a-dde721e5e2fa",
+              "name": "weather",
+              "value": "={{ $json.current.weather_descriptions[0] }}",
+              "type": "string"
+            },
+            {
+              "id": "089b6f72-80f9-42c8-9a40-d1dc08631716",
+              "name": "min_temperature",
+              "value": "={{ Object.values($json.forecast)[1].mintemp}}",
+              "type": "number"
+            },
+            {
+              "id": "27175e70-0aea-4831-abcc-fd2c56b171cf",
+              "name": "max_temperature",
+              "value": "={{ Object.values($json.forecast)[1].maxtemp}}",
+              "type": "number"
+            },
+            {
+              "id": "d0b46180-70bf-441f-ab0d-3c7d79802107",
+              "name": "weather_icon",
+              "value": "={{ $json.current.weather_icons[0] }}",
+              "type": "string"
+            },
+            {
+              "id": "1b08a322-5372-4884-9ce3-bde6c799d0ef",
+              "name": "feels_like",
+              "value": "={{ $json.current.feelslike }}",
+              "type": "number"
+            },
+            {
+              "id": "c2f50bdd-a852-403c-bc69-a6e9e4903273",
+              "name": "humidity",
+              "value": "={{ $json.current.humidity }}",
+              "type": "number"
+            },
+            {
+              "id": "6e61289f-ac67-4dfc-b8e5-ceecd1858d5c",
+              "name": "wind_speed",
+              "value": "={{ $json.current.wind_speed }}",
+              "type": "number"
+            },
+            {
+              "id": "86d9be11-e805-49c0-b881-27b92b5a1462",
+              "name": "precipitation",
+              "value": "={{ $json.current.precip }}",
+              "type": "number"
+            },
+            {
+              "id": "d5e9f4d9-a290-46ae-80a0-616ccefc2bbe",
+              "name": "next_days",
+              "value": "={{ Object.values($json.forecast).slice(0) }}",
+              "type": "array"
+            },
+            {
+              "id": "1abda3e0-59e6-4651-80a7-50a79a717e08",
+              "name": "timestamp",
+              "value": "={{ $json.location.localtime }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        440,
+        520
+      ],
+      "id": "a3dc95a6-75a6-4bdf-9306-7dfdc6c9376c",
+      "name": "Normaliza Dados Completo RJ"
+    },
+    {
+      "parameters": {
+        "jsCode": "function isGoodForBeach(forecast) {\n  const temperature = forecast.temp_max;\n  \n  if (temperature > 25) {\n    return true;\n  }\n  return false;\n}\nconst normalized_data = $input.first().json;\n\nconst rj_data = {\n    ...normalized_data,\n    is_good_for_beach: isGoodForBeach(normalized_data)\n  }\n\nreturn rj_data;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        620,
+        100
+      ],
+      "id": "16e47ddf-58a5-4a84-8579-0b10785d5bfe",
+      "name": "Calcula Praia no RJ"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env['URL_STRAPI'] }}/api/weathers",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"data\":{{ JSON.stringify($json) }}\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        -100
+      ],
+      "id": "40a20cd9-51ab-4835-888c-0cd0a33e8c2e",
+      "name": "Gravar Strapi Tempo SP",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "2B26JrdQQIccpL2u",
+          "name": "Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env['URL_STRAPI'] }}/api/weathers",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"data\":{{ JSON.stringify($json) }}\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        800,
+        100
+      ],
+      "id": "7b26ca98-0cad-418b-9d57-a4b699d32baf",
+      "name": "Gravar Strapi Tempo RJ",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "2B26JrdQQIccpL2u",
+          "name": "Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "chooseBranch",
+        "output": "empty"
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        960,
+        -40
+      ],
+      "id": "f4abc08d-36fa-494c-95ea-07a558c18899",
+      "name": "Aguarda Consulta Tempo"
+    },
+    {
+      "parameters": {
+        "mode": "markdownToHtml",
+        "markdown": "=**Resumo do Tempo 🌦️**<br/>\n**São Paulo:** {{ $('Normaliza Dados SP').item.json.current_temperature }}°C -{{ $('Normaliza Dados SP').item.json.weather }}. ![icon-sp]({{ $('Normaliza Dados SP').item.json.weather_icon }} =21x21)<br/>\nTemperatura Mínima: {{ $('Normaliza Dados SP').item.json.min_temperature }}°C<br/>\nTemperatura Máxima: {{ $('Normaliza Dados SP').item.json.max_temperature }}°C<br/>\nSensação Termica: {{ $('Normaliza Dados SP').item.json.feels_like }}°C<br/>\nUmidade: {{ $('Normaliza Dados SP').item.json.humidity }}%<br/>\nVelocidade do Vento: {{ $('Normaliza Dados SP').item.json.wind_speed }}<br/>\nPrecipitação: {{ $('Normaliza Dados SP').item.json.precipitation }}<br/><br/>\n**Rio de Janeiro:** {{ $('Normaliza Dados RJ').item.json.current_temperature }}°C - {{ $('Normaliza Dados RJ').item.json.weather }}. ![icon-rj]({{ $('Normaliza Dados RJ').item.json.weather_icon }} =21x21)<br/>\nTemperatura Mínima: {{ $('Normaliza Dados RJ').item.json.min_temperature }}°C<br/>\nTemperatura Máxima: {{ $('Normaliza Dados RJ').item.json.max_temperature }}°C<br/>\nSensação Termica: {{ $('Normaliza Dados RJ').item.json.feels_like }}°C<br/>\nUmidade: {{ $('Normaliza Dados RJ').item.json.humidity }}%<br/>\nVelocidade do Vento: {{ $('Normaliza Dados RJ').item.json.wind_speed }}<br/>\nPrecipitação: {{ $('Normaliza Dados RJ').item.json.precipitation }}<br/><br/>\n\n**Fim de semana na praia do Rio?**<br/>\n\n{{ \n  $('Calcula Praia no RJ').item.json.is_good_for_beach \n  ? \"✅ Sim, o tempo parece ótimo!\"\n  : \"❌ Melhor não, o tempo parece ruim.\"\n}}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.markdown",
+      "typeVersion": 1,
+      "position": [
+        1180,
+        -40
+      ],
+      "id": "d74b0426-0cbf-4a7f-ae1f-032dfb9058d9",
+      "name": "Markdown de Tempo para Email"
+    },
+    {
+      "parameters": {
+        "mode": "markdownToHtml",
+        "markdown": "=**Resumo do Tempo 🌦️**<br/>\n**São Paulo:** {{ $('Normaliza Dados Completo SP').item.json.current_temperature }}°C -{{ $('Normaliza Dados Completo SP').item.json.weather }}. ![icon-sp]({{ $('Normaliza Dados Completo SP').item.json.weather_icon }} =21x21)<br/>\nTemperatura Mínima: {{ $('Normaliza Dados Completo SP').item.json.min_temperature }}°C<br/>\nTemperatura Máxima: {{ $('Normaliza Dados Completo SP').item.json.max_temperature }}°C<br/>\nSensação Termica: {{ $('Normaliza Dados Completo SP').item.json.feels_like }}°C<br/>\nUmidade: {{ $('Normaliza Dados Completo SP').item.json.humidity }}%<br/>\nVelocidade do Vento: {{ $('Normaliza Dados Completo SP').item.json.wind_speed }}<br/>\nPrecipitação: {{ $('Normaliza Dados Completo SP').item.json.precipitation }}<br/><br/>\n**Rio de Janeiro:** {{ $('Normaliza Dados Completo RJ').item.json.current_temperature }}°C - {{ $('Normaliza Dados Completo RJ').item.json.weather }}. ![icon-rj]({{ $('Normaliza Dados Completo RJ').item.json.weather_icon }} =21x21)<br/>\nTemperatura Mínima: {{ $('Normaliza Dados Completo RJ').item.json.min_temperature }}°C<br/>\nTemperatura Máxima: {{ $('Normaliza Dados Completo RJ').item.json.max_temperature }}°C<br/>\nSensação Termica: {{ $('Normaliza Dados Completo RJ').item.json.feels_like }}°C<br/>\nUmidade: {{ $('Normaliza Dados Completo RJ').item.json.humidity }}%<br/>\nVelocidade do Vento: {{ $('Normaliza Dados Completo RJ').item.json.wind_speed }}<br/>\nPrecipitação: {{ $('Normaliza Dados Completo RJ').item.json.precipitation }}<br/><br/>\n\n**Fim de semana na praia do Rio?**<br/>\n\n{{ \n  ($(\"Normaliza Dados Previsao RJ\").first().json.is_good_for_beach && $(\"Normaliza Dados Previsao RJ\").last().json.is_good_for_beach) \n  ? \"✅ Ambos os dias (Sábado e Domingo) parecem ótimos para praia!\"\n  : $(\"Normaliza Dados Previsao RJ\").first().json.is_good_for_beach \n  ? \"✅ Sábado, o tempo parece ótimo para a praia!\"\n  : $(\"Normaliza Dados Previsao RJ\").last().json.is_good_for_beach \n  ? \"✅ Domingo, o tempo parece ótimo para a praia!\"\n  : \"❌ Nenhum dos dois dias parece bom para praia.\"\n}}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.markdown",
+      "typeVersion": 1,
+      "position": [
+        1740,
+        440
+      ],
+      "id": "c1bf7e29-7ca3-4020-9a97-87e7e6569c63",
+      "name": "Markdown de Tempo com Previsões para Email"
+    },
+    {
+      "parameters": {
+        "fromEmail": "={{ $env['MAIL_FROM_ADDRESS'] }}",
+        "toEmail": "={{ $env['MAIL_TO'] }}",
+        "subject": "Notification",
+        "html": "={{ $json.data }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1400,
+        -40
+      ],
+      "id": "c759c09a-6c28-43e2-b0c3-b472fdeab29c",
+      "name": "Envia Email com Previsao de Tempo",
+      "webhookId": "ea68ae81-d12e-40ed-88dd-750c4209852c",
+      "credentials": {
+        "smtp": {
+          "id": "2Y9DvOS8PCq5cflH",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fromEmail": "={{ $env['MAIL_FROM_ADDRESS'] }}",
+        "toEmail": "={{ $env['MAIL_TO'] }}",
+        "subject": "Notification",
+        "html": "={{ $json.data }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1980,
+        440
+      ],
+      "id": "e134d769-a0fa-4c26-9f4d-542aa984b7fa",
+      "name": "Envia Email com Previsoes de Tempo",
+      "webhookId": "ea68ae81-d12e-40ed-88dd-750c4209852c",
+      "credentials": {
+        "smtp": {
+          "id": "2Y9DvOS8PCq5cflH",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 10
+            },
+            {
+              "triggerAtHour": 16
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "f78b31df-21dc-4636-9448-345bcade0218",
+      "name": "Agendamento 10:00 e 16:00"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 10
+            },
+            {
+              "triggerAtHour": 16
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        420
+      ],
+      "id": "e9368af4-e209-4d55-8baa-a234c500415a",
+      "name": "Agendamento 10:00 e 16:00 com API Premium da WeatherStack"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Consulta Tempo Rio de Janeiro": {
+      "main": [
+        [
+          {
+            "node": "Normaliza Dados RJ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Consulta Tempo Sao Paulo": {
+      "main": [
+        [
+          {
+            "node": "Normaliza Dados SP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Padronizacao RJ": {
+      "main": [
+        [
+          {
+            "node": "Gravar Strapi RJ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gravar Strapi Previsoes  RJ": {
+      "main": [
+        [
+          {
+            "node": "Aguarda Consulta Tempo e Previsoes",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Normaliza Dados Previsao RJ": {
+      "main": [
+        [
+          {
+            "node": "Gravar Strapi Previsoes  RJ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aparta Fim de Semana": {
+      "main": [
+        [
+          {
+            "node": "Normaliza Dados Previsao RJ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calcula Final de Semana": {
+      "main": [
+        [
+          {
+            "node": "Aparta Fim de Semana",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aguarda Consulta Tempo e Previsoes": {
+      "main": [
+        [
+          {
+            "node": "Markdown de Tempo com Previsões para Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gravar Strapi SP": {
+      "main": [
+        [
+          {
+            "node": "Aguarda Consulta Tempo e Previsoes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gravar Strapi RJ": {
+      "main": [
+        [
+          {
+            "node": "Aguarda Consulta Tempo e Previsoes",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Consulta Completa Tempo Sao Paulo": {
+      "main": [
+        [
+          {
+            "node": "Normaliza Dados Completo SP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normaliza Dados Completo SP": {
+      "main": [
+        [
+          {
+            "node": "Gravar Strapi SP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Consulta Completa Tempo Rio de Janeiro": {
+      "main": [
+        [
+          {
+            "node": "Normaliza Dados Completo RJ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normaliza Dados Completo RJ": {
+      "main": [
+        [
+          {
+            "node": "Calcula Final de Semana",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Padronizacao RJ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normaliza Dados RJ": {
+      "main": [
+        [
+          {
+            "node": "Calcula Praia no RJ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normaliza Dados SP": {
+      "main": [
+        [
+          {
+            "node": "Gravar Strapi Tempo SP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calcula Praia no RJ": {
+      "main": [
+        [
+          {
+            "node": "Gravar Strapi Tempo RJ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gravar Strapi Tempo RJ": {
+      "main": [
+        [
+          {
+            "node": "Aguarda Consulta Tempo",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Gravar Strapi Tempo SP": {
+      "main": [
+        [
+          {
+            "node": "Aguarda Consulta Tempo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aguarda Consulta Tempo": {
+      "main": [
+        [
+          {
+            "node": "Markdown de Tempo para Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Markdown de Tempo para Email": {
+      "main": [
+        [
+          {
+            "node": "Envia Email com Previsao de Tempo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Markdown de Tempo com Previsões para Email": {
+      "main": [
+        [
+          {
+            "node": "Envia Email com Previsoes de Tempo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agendamento 10:00 e 16:00": {
+      "main": [
+        [
+          {
+            "node": "Consulta Tempo Sao Paulo",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Consulta Tempo Rio de Janeiro",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agendamento 10:00 e 16:00 com API Premium da WeatherStack": {
+      "main": [
+        [
+          {
+            "node": "Consulta Completa Tempo Sao Paulo",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Consulta Completa Tempo Rio de Janeiro",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "62e318e4-dc48-4568-972a-8b62a1394602",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1c5af58e8f3e7c9034b347b92662d55a001c1428b174f6469263b90e840c1639"
+  },
+  "id": "73fmLB7aE6zzKzxb",
+  "tags": []
+}

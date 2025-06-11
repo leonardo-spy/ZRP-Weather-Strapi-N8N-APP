@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+
+  strapi_zrp:
+    build:
+      context: ./
+      dockerfile: Dockerfile-strapi
+    container_name: strapi_weather_sqlite_zrp
+    restart: unless-stopped
+    volumes:
+      - ./strapi-app:/app
+      - ./data:/app/data
+      - /app/node_modules 
+    ports:
+      - "1337:1337"
+    environment:  
+      DATABASE_CLIENT: ${STRAPI_DATABASE_CLIENT}
+      DATABASE_FILENAME: ${STRAPI_DATABASE_FILENAME}
+    networks:
+      - network_zrp
+  n8n_zrp:
+    image: n8nio/n8n
+    container_name: n8n_weather_zrp
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    volumes:
+      - ./n8n-data:/home/node/.n8n
+    environment:
+      GENERIC_TIMEZONE: "America/Sao_Paulo"
+      URL_STRAPI: ${N8N_URL_STRAPI}
+      TOKEN_WEATHERSTACK: ${N8N_TOKEN_WEATHERSTACK}
+      TOKEN_STRAPI_FULL_ACCESS: ${N8N_TOKEN_STRAPI_FULL_ACCESS}
+      MAIL_TO: ${N8N_MAIL_TO}
+      MAIL_HOST: ${N8N_MAIL_HOST}
+      MAIL_PORT: ${N8N_MAIL_PORT}
+      MAIL_USERNAME: ${N8N_MAIL_USERNAME}
+      MAIL_PASSWORD: ${N8N_MAIL_PASSWORD}
+      MAIL_FROM_ADDRESS: ${N8N_MAIL_FROM_ADDRESS}
+      MAIL_FROM_NAME: ${N8N_MAIL_FROM_NAME}
+    networks:
+      - network_zrp
+networks:
+  network_zrp:
+    driver: bridge

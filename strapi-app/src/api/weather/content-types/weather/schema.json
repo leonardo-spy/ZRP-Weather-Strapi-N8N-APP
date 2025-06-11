@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weathers",
+  "info": {
+    "singularName": "weather",
+    "pluralName": "weathers",
+    "displayName": "Weather"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "current_temperature": {
+      "type": "decimal"
+    },
+    "weather": {
+      "type": "string"
+    },
+    "min_temperature": {
+      "type": "decimal"
+    },
+    "max_temperature": {
+      "type": "decimal"
+    },
+    "weather_icon": {
+      "type": "text"
+    },
+    "feels_like": {
+      "type": "decimal"
+    },
+    "humidity": {
+      "type": "integer"
+    },
+    "wind_speed": {
+      "type": "decimal"
+    },
+    "precipitation": {
+      "type": "decimal"
+    },
+    "is_good_for_beach": {
+      "type": "boolean"
+    },
+    "timestamp": {
+      "type": "datetime"
+    }
+  }
+}

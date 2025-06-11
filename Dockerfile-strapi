@@ -1,0 +1,22 @@
+# Usar uma imagem base oficial do Node.js
+FROM node:18-alpine
+
+# Instalar dependências necessárias para compilar o pacote sqlite3
+RUN apk add --no-cache build-base python3 vips-dev libc6-compat libstdc++ linux-headers
+
+# Definir o diretório de trabalho dentro do contêiner
+WORKDIR /app
+
+# Copiar os arquivos de dependência
+COPY ./strapi-app/package*.json ./
+
+RUN npm install --include=optional sharp
+
+# Copiar o restante dos arquivos da aplicação
+COPY ./strapi-app/ .
+
+# Expor a porta que o Strapi usa
+EXPOSE 1337
+
+# Comando para iniciar a aplicação
+CMD ["npm", "run", "develop"]
